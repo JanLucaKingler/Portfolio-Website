@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="data-rating.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="global/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="#" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Backend Programmer</p>
+                <h1>Hi, I'm <span>Luca</span><br>Kingler From Germany</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------About------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mee.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I enjoy playing video games in my free time, as they allow me to immerse myself in exciting
+                        virtual worlds
+                        and challenge my skills. Whether it's action-packed adventures or strategic challenges, gaming
+                        is one of my favorite pastimes.
+                        Another passion of mine is taking care of my car. I love cleaning and maintaining it to keep it
+                        in perfect condition.
+                        Paying attention to every little detail gives me a sense of satisfaction, and I enjoy seeing my
+                        car shine after a thorough cleaning session.
+                        Both hobbies allow me to relax and focus on something I truly enjoy.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <div class="skills-container">
+                                <h1>How I Would Rate Myself</h1>
+                                <br></br>
+                                <br></br>
+                                <div class="skills">
+                                    <!-- Code Section -->
+                                    <div class="category">
+                                        <h2>Code</h2>
+                                        <br></br>
+                                        <div class="skill">
+                                            <img src="images/icon/java.png" alt="Java">
+                                            <p>Java</p>
+                                            <span>Fluently</span>
+                                            <div class="stars" data-rating="4"></div>
+                                        </div>
+                                        <div class="skill">
+                                            <img src="images/icon/python.png" alt="Python">
+                                            <p>Python</p>
+                                            <p><span>Understanding</span></p>
+                                            <div class="stars" data-rating="2"></div>
+                                        </div>
+                                        <div class="skill">
+                                            <img src="images/icon/html.png" alt="HTML">
+                                            <p>HTML</p>
+                                            <p><span>Understanding</span></p>
+                                            <div class="stars" data-rating="2"></div>
+                                        </div>
+                                        <div class="skill">
+                                            <img src="images/icon/sql.png" alt="SQL">
+                                            <p>SQL</p>
+                                            <p><span>Basics</span></p>
+                                            <div class="stars" data-rating="3"></div>
+                                        </div>
+                                        <!-- Add more skills in this format -->
+                                    </div>
+                                    <!-- Tools Section -->
+                                    <div class="category">
+                                        <h2>Tools</h2>
+                                        <br></br>
+                                        <div class="skill">
+                                            <img src="images/icon/github.png" alt="Git">
+                                            <p>Git</p>
+                                            <p><span>Basics</span></p>
+                                            <div class="stars" data-rating="2"></div>
+                                        </div>
+                                        <div class="skill">
+                                            <img src="images/icon/office.png" alt="MS Office">
+                                            <p>MS Office</p>
+                                            <p><span>Experienced</span></p>
+                                            <div class="stars" data-rating="4"></div>
+                                        </div>
+                                        <div class="skill">
+                                            <img src="images/icon/intellij.png" alt="Intellij">
+                                            <p>Intellij</p>
+                                            <p><span>Experienced</span></p>
+                                            <div class="stars" data-rating="4"></div>
+                                        </div>
+                                        <div class="skill">
+                                            <img src="images/icon/vsc.png" alt="Visual Studio Code">
+                                            <p>Visual Studio Code</p>
+                                            <p><span>Basics</span></p>
+                                            <div class="stars" data-rating="2"></div>
+                                        </div>
+                                        <!-- Add more tools in this format -->
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2000- current</span><br>Programming App logik</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Training at SHD Germany</li>
+                            <li><span>2015</span><br>MBA from MIT Bangalore</li>
+                            <li><span>2014</span><br>Fachabi in DIerdorf</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------Portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------Contact------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> janlucakingler@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0160 8491267</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/lebenslauf.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright Kingler </p>
+        </div>
+
+        <script>
+
+
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+</body>
+
+</html>
